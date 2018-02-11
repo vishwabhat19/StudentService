@@ -23,8 +23,8 @@ public class StudentService {
 		Course course3 = new Course("Course3","OCAJP","4 Steps",Arrays.asList("Read Mala Gupta","Solve practice Tests"));
 		Course course4 = new Course("Course4","OCPJP","4 Steps",Arrays.asList("Read OCPJP Books","Solve practice Tests"));
 
-		Student ram = new Student("Student1","Ramanujan","SSE",Arrays.asList(course1,course2));
-		Student laxman = new Student("Student 2", "Laxman", "TA", Arrays.asList(course3));
+		Student ram = new Student("Student1","Ramanujan","SSE",new ArrayList<>(Arrays.asList(course1,course2)) );
+		Student laxman = new Student("Student 2", "Laxman", "TA", new ArrayList<>(Arrays.asList(course3)));
 		
 		students.add(ram);
 		students.add(laxman);
